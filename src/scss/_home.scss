@@ -1,0 +1,56 @@
+.home {
+	display: flex;
+	flex-wrap: wrap;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 200px 0;
+    height: 80vh;
+
+	&__title {
+		text-transform: uppercase;
+		color: $white;
+		font: 900 65px/1.3 "Raleway",sans-serif;
+		position: relative;
+		padding: 35px 0;
+
+		@include screen(1024) {
+            font-size: 28px;
+            text-align: center;
+            padding: 20px;
+        }
+
+		h3:before {
+			top: 0;
+		}
+
+		h3:after {
+			bottom: 0;
+		}
+
+		h3:before,
+		h3:after {
+			position: absolute;
+		    content: '';
+		    width: 650px;
+		    height: 3px;
+		    left: calc(50% - 325px);
+		    background: $white;
+		    opacity: .5;
+
+		    @include screen(1024) {
+            	left: calc(50% - 250px);
+            	width: 500px;
+        	}
+		}
+	}
+
+	&__description {
+		text-align: center;
+	    color: rgba(255,255,255,0.702);
+	    font-size: 25px;
+
+	    @include screen(1024) {
+            font-size: 20px;
+        }
+	}
+}

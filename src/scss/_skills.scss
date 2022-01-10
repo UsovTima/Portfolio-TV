@@ -1,0 +1,52 @@
+.skills {
+	&__text {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		text-transform: capitalize;
+		font: 700 40px/1.75 'Raleway', sans-serif;
+
+		@include screen(740) {
+			font-size: 25px;
+		}
+
+	}
+
+	&__box {
+		width: 280px;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    	padding: 85px 0;
+    	border-radius: 15px;
+    	transition: .3s;
+    	margin: 50px 10px 0;
+
+    	@include screen(740) {
+			width: 200px;
+			height: 200px;
+		}
+
+		@include screen(470) {
+			width: 100%;
+			margin: 20px 0 0 0;
+		}
+
+
+		img {
+			width: 40px;
+			height: 40px;
+		}
+
+		p {
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+
+	&__box:hover {
+    	border-radius: 25px;
+    	box-shadow: $box-shadow;
+    }
+}

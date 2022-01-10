@@ -1,0 +1,56 @@
+.description {
+	background: $white;
+
+	&__wrapper {
+		display: flex;
+
+		@include screen(700) {
+			flex-direction: column;
+		}
+	}
+
+	&__img img {
+		min-width: 350px;
+
+		@include screen(700) {
+			display: none;
+		}
+	}
+
+	&__text {
+
+		h4 {
+			color: $black_transparent;
+			padding: 170px 0 40px;
+
+			@include screen(700) {
+				padding: 10px 0 40px;
+			}
+		}
+
+		p {
+			color: $gray_transparent;
+			padding-bottom: 15px;
+		}
+	}
+
+	&__input input {
+		margin: 15px 0 0;
+		text-align: center;
+    	transition: .5s;
+    	padding: 15px 70px;
+    	color: $black_transparent;
+    	border: $darkblue;
+    	border-radius: 2px;
+    	min-width: 200px;
+    	font-size: 16px;
+    	letter-spacing: .05em;
+	}
+
+	&__input input:hover {
+		background: #ff2b4a;
+    	border-color: #ff2b4a;
+    	color: #fff;
+    	box-shadow: $box-shadow;
+	}
+}
