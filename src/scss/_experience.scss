@@ -1,0 +1,49 @@
+.experience {
+	display: flex;
+
+	@include screen(800) {
+		&__work {
+			width: 100%!important;
+		}
+
+		.container {
+			flex-direction: column;
+		}
+
+		&__work-experience {
+			width: 100%;
+			padding: 20px;
+
+			.title-26 {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		&__education {
+			width: 100%;
+			padding: 20px;
+
+			.title-26 {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
+	&__work	{
+		width: 98%;
+		background: rgba(255,255,255,0.1);
+		backdrop-filter: blur(12px);
+    	padding: 35px 45px;
+    	position: relative;
+
+    	.title-26 {
+    		margin-bottom: 30px;
+    	}
+
+    	p {
+    		color: #b5b6bf;
+    	}
+	}
+}

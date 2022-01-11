@@ -84,6 +84,10 @@ section {
     width: 33%;
 }
 
+.col-50 {
+    width: 50%;
+}
+
 .html {
     background: #e10964;
 }
@@ -100,3 +104,37 @@ section {
     background: #cf3e9a;
 }
 
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font: 700 40px/1.75 'Raleway', sans-serif;
+}
+
+.title-26 {
+    font: 700 26px/2 $raleway;
+    color: $white;
+    letter-spacing: 1px;
+}
+
+.title-18 {
+    font: 700 18px/2 $roboto;
+    color: $white;
+    letter-spacing: 1px;
+}
+
+.title-16 {
+    font: 500 16px/2 $roboto;
+    color: #d7d8dd;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    left: calc(100% - 94%);
+    bottom: 15px;
+    width: 82%;
+    height: 2px;
+    background: #b5b6bf;
+}

@@ -6,3 +6,11 @@
 
     }
 }
+
+//Slider for works 
+
+@mixin mediaMaxWidth($w) {
+	@media (max-width: $w) {
+    @content;
+  }
+}
