@@ -1,11 +1,5 @@
 .skills {
-	&__text {
-		display: flex;
-		text-align: center;
-		justify-content: center;
-		text-transform: capitalize;
-		font: 700 40px/1.75 'Raleway', sans-serif;
-
+	.title {
 		@include screen(740) {
 			font-size: 25px;
 		}

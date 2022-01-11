@@ -70,6 +70,9 @@ section {
 .col-33 {
   width: 33%; }
 
+.col-50 {
+  width: 50%; }
+
 .html {
   background: #e10964; }
 
@@ -81,6 +84,36 @@ section {
 
 .git {
   background: #cf3e9a; }
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font: 700 40px/1.75 'Raleway', sans-serif; }
+
+.title-26 {
+  font: 700 26px/2 "Raleway", sans-serif;
+  color: #fff;
+  letter-spacing: 1px; }
+
+.title-18 {
+  font: 700 18px/2 "Roboto", sans-serif;
+  color: #fff;
+  letter-spacing: 1px; }
+
+.title-16 {
+  font: 500 16px/2 "Roboto", sans-serif;
+  color: #d7d8dd; }
+
+.underline:after {
+  content: '';
+  position: absolute;
+  left: calc(100% - 94%);
+  bottom: 15px;
+  width: 82%;
+  height: 2px;
+  background: #b5b6bf; }
 
 .header {
   position: absolute;
@@ -255,15 +288,9 @@ section {
     color: #fff;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.5); }
 
-.skills__text {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  text-transform: capitalize;
-  font: 700 40px/1.75 'Raleway', sans-serif; }
-  @media (max-width: 740px) {
-    .skills__text {
-      font-size: 25px; } }
+@media (max-width: 740px) {
+  .skills .title {
+    font-size: 25px; } }
 
 .skills__box {
   width: 280px;
@@ -293,6 +320,37 @@ section {
 .skills__box:hover {
   border-radius: 25px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.5); }
+
+.experience {
+  display: flex; }
+  @media (max-width: 800px) {
+    .experience__work {
+      width: 100% !important; }
+    .experience .container {
+      flex-direction: column; }
+    .experience__work-experience {
+      width: 100%;
+      padding: 20px; }
+      .experience__work-experience .title-26 {
+        display: flex;
+        justify-content: center; }
+    .experience__education {
+      width: 100%;
+      padding: 20px; }
+      .experience__education .title-26 {
+        display: flex;
+        justify-content: center; } }
+  .experience__work {
+    width: 98%;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+    padding: 35px 45px;
+    position: relative; }
+    .experience__work .title-26 {
+      margin-bottom: 30px; }
+    .experience__work p {
+      color: #b5b6bf; }
 
 
 /*# sourceMappingURL=style.css.map*/
