@@ -404,7 +404,8 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  transition: .4s; }
+  transition: .4s;
+  color: #fff; }
 
 input {
   outline: none; }
@@ -494,6 +495,16 @@ section {
   background-position: 50% 50% !important;
   width: 100% !important;
   height: 100% !important; }
+
+.box {
+  width: 98%;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  padding: 60px 45px;
+  display: flex;
+  flex-direction: column; }
 
 .header {
   position: absolute;
@@ -832,6 +843,74 @@ section {
 
 .last_works .swiper-hover:hover .socials {
   opacity: 1; }
+
+.contacts .title {
+  color: #fff; }
+
+.contacts .contacts-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.contacts .col-50 {
+  margin-right: 5%; }
+  @media (max-width: 740px) {
+    .contacts .col-50 {
+      width: 100%;
+      margin: 3% 0; } }
+
+.contacts__form-item {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 48px;
+  padding: 15px 20px;
+  outline: none;
+  font-size: 12px;
+  width: 100%;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px; }
+  .contacts__form-item:focus {
+    border-color: #fff;
+    color: #fff; }
+
+.contacts__form textarea {
+  height: 15vh; }
+
+.contacts__form-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  align-items: center; }
+  .contacts__form-bottom .button {
+    text-align: center;
+    transition: .5s;
+    max-width: 200px;
+    font-size: 16px; }
+    .contacts__form-bottom .button:hover {
+      background: #ff2b4a;
+      border-color: #ff2b4a;
+      color: #fff; }
+
+.contacts__address {
+  padding: 30px 25px; }
+  @media (max-width: 740px) {
+    .contacts__address {
+      align-items: center;
+      margin: 5px; } }
+
+.contacts__phone {
+  padding: 30px 25px; }
+  @media (max-width: 740px) {
+    .contacts__phone {
+      align-items: center;
+      margin: 5px; } }
+
+.contacts__web {
+  padding: 30px 25px; }
+  @media (max-width: 740px) {
+    .contacts__web {
+      align-items: center;
+      margin: 5px; } }
 
 
 /*# sourceMappingURL=style.css.map*/
