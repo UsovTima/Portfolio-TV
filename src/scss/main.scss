@@ -1,5 +1,8 @@
 @import 'variables';
 @import 'mixins';
+@import '~swiper/swiper.scss';
+@import '~swiper/modules/navigation/navigation';
+@import '~swiper/modules/pagination/pagination';
 @import "base";
 @import 'header';
 @import 'home';
@@ -7,3 +10,4 @@
 @import 'skills';
 @import 'experience';
 @import 'last_works';
+

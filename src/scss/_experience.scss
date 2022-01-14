@@ -14,9 +14,23 @@
 			width: 100%;
 			padding: 20px;
 
+			@include screen (780) {
+				padding: 0 70px 0;
+			}
+
+			@include screen (600) {
+				padding: 0 15px 0;
+			}
+
 			.title-26 {
 				display: flex;
 				justify-content: center;
+			}
+		}
+
+		.title-26 {
+			@include screen (780) {
+				font-size: 20px;
 			}
 		}
 
@@ -24,9 +38,21 @@
 			width: 100%;
 			padding: 20px;
 
+			@include screen (780) {
+				padding: 5px 70px 0;
+			}
+
+			@include screen (600) {
+				padding: 5px 15px 0;
+			}
+
 			.title-26 {
 				display: flex;
 				justify-content: center;
+
+				@include screen (780) {
+					font-size: 20px;
+				}
 			}
 		}
 	}
@@ -40,6 +66,10 @@
 
     	.title-26 {
     		margin-bottom: 30px;
+
+    		@include screen (780) {
+				margin-bottom: 20px;
+			}
     	}
 
     	p {

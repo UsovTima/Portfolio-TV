@@ -77,6 +77,7 @@ section {
 
     @include screen(740) {
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -122,6 +123,10 @@ section {
     font: 700 18px/2 $roboto;
     color: $white;
     letter-spacing: 1px;
+
+    @include screen(650) {
+        font-size: 16px;
+    }
 }
 
 .title-16 {
@@ -137,4 +142,12 @@ section {
     width: 82%;
     height: 2px;
     background: #b5b6bf;
+}
+
+.img-normal {
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: 50% 50%!important;
+    width: 100%!important;
+    height: 100%!important;
 }
