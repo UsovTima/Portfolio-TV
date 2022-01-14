@@ -1,86 +1,219 @@
-<head><link href="css/style.css" rel="stylesheet"></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve './images/telegram.png' in 'C:\Users\Us  er\OneDrive\Рабочий стол\lemon school\Portfolio-TV\src':
-  Error: Can't resolve './images/telegram.png' in 'C:\Users\User\OneDrive\Рабочи  й стол\lemon school\Portfolio-TV\src'
-  Module not found: Error: Can't resolve './images/viber.png' in 'C:\Users\User\  OneDrive\Рабочий стол\lemon school\Portfolio-TV\src':
-  Error: Can't resolve './images/viber.png' in 'C:\Users\User\OneDrive\Рабочий с  тол\lemon school\Portfolio-TV\src'
-  
-  - compiler.js:79 
-    [Portfolio-TV]/[html-webpack-plugin]/lib/compiler.js:79:16
-  
-  - Compiler.js:343 
-    [Portfolio-TV]/[webpack]/lib/Compiler.js:343:11
-  
-  - Compiler.js:681 
-    [Portfolio-TV]/[webpack]/lib/Compiler.js:681:15
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compiler.js:678 
-    [Portfolio-TV]/[webpack]/lib/Compiler.js:678:31
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1423 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1423:35
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1414 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1414:32
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1409 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1409:36
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1405 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1405:32
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1342 Compilation.seal
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1342:27
-  
-  - Compiler.js:675 
-    [Portfolio-TV]/[webpack]/lib/Compiler.js:675:18
-  
-  - Compilation.js:1261 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1261:4
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [Portfolio-TV]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1253 Compilation.finish
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1253:28
-  
-  - Compiler.js:672 
-    [Portfolio-TV]/[webpack]/lib/Compiler.js:672:17
-  
-  
-  - Compilation.js:1185 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1185:12
-  
-  - Compilation.js:1097 
-    [Portfolio-TV]/[webpack]/lib/Compilation.js:1097:9
-  
-  - task_queues.js:77 processTicksAndRejections
-    internal/process/task_queues.js:77:11
-  
-</pre><script type="text/javascript" src="js/main.min.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Usov T.V. Portfolio</title>
+    <link rel="icon" href="images/menu.png" type="image/logo">
+<link href="css/style.css" rel="stylesheet"></head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container flex">
+                <span class="header__logo">
+                    <img src="images/logo.png" alt="Vv">
+                </span>
+                <nav class="header__navigation--inline flex">
+                    <a href="#home" class="anchor">Home</a>
+                    <a href="#description" class="anchor">Description</a>
+                    <a href="#skills" class="anchor">Skills</a>
+                    <a href="#experience" class="anchor">Work Experience and Education</a>
+                    <a href="#last_works" class="anchor">Last Works</a>
+                    <a href="#contacts" class="anchor">Contacts</a>
+                </nav>
+                <div class="header__navigation">
+                    <span class="header__navigation-button"></span>
+                    <ul class="header__navigation-menu">
+                        <li><a href="#home" class="anchor">Home</a></li>
+                        <li><a href="#description" class="anchor">Description</a></li>
+                        <li><a href="#skills" class="anchor">Skills</a></li>
+                        <li><a href="#experience" class="anchor">Work Experience and Education</a></li>
+                        <li><a href="#last_works" class="anchor">Last Works</a></li>
+                        <li><a href="#contacts" class="anchor">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+       <section id="home" class="home" style="background-image: url('./images/inline/header.jpg');">
+            <div class="container">
+                 <div class="home__title">
+                    <h3>Tima Usov</h3>  
+                 </div>
+                 <div class="home__description">
+                     <p>Juniour Frontend Developer</p>  
+                 </div>
+            </div>
+        </section> 
+        <section id="description" class="description">
+            <div class="container">
+                <div class="description__wrapper">
+                <div class="description__img">
+                    <img src="images/person.jpg" alt="Who i am ?">
+                </div>
+                <div class="description__text">
+                    <h4>Hi, i’m <i>Usov Tima</i> , Junior Developer from <i>Ukraine.</i> </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.
+                    </p>
+                    <p>
+                        Duis autem vel eum iriure dolorin hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.
+                    </p>
+                    <div class="description__input">
+                        <input type="submit" value="Hire me!">
+                    </div>
+                </div>   
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h3 class="title">
+                my working skills
+            </h3>
+            <div class="container row">
+                <div class="skills__box html">
+                    <div class="skills__box-img">
+                        <img src="images/html.png" alt="html">
+                    </div>
+                    <p>html</p>
+                </div>
+                <div class="skills__box css">
+                    <div class="skills__box-img">
+                        <img src="images/css.png" alt="html">
+                    </div>
+                    <p>css</p>
+                </div>
+                <div class="skills__box webpack">
+                    <div class="skills__box-img">
+                        <img src="images/webpack.png" alt="html">
+                    </div>
+                    <p>webpack</p>
+                </div>
+                <div class="skills__box git">
+                    <div class="skills__box-img">
+                        <img src="images/git.png" alt="html">
+                    </div>
+                    <p>git</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience" style="background: gray;">
+            <div class="container flex">
+                <div class="experience__work-experience col-50">
+                    <div class="experience__work">
+                        <h3 class="title-26">Work Experience</h3>
+                        <div class="description_underline">
+                            <h3 class="title-18">Mad Max Design</h3>
+                            <h3 class="title-16">OCT 2013 - june 2014</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="experience__education col-50">
+                    <div class="experience__work">
+                        <h3 class="title-26">Education</h3>
+                        <div>
+                            <h3 class="title-18">Mad Max Design</h3>
+                            <h3 class="title-16">OCT 2013 - june 2014</h3>
+                            <p class="underline">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div> 
+                    </div>
+                    <div class="experience__work">
+                        <div>
+                            <h3 class="title-18">Mad Max Design</h3>
+                            <h3 class="title-16">OCT 2013 - june 2014</h3>
+                            <p class="underline">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="last_works" class="last_works">
+            <div class="container">
+                <h3 class="title">
+                    my latest works
+                </h3>
+                <div class="swiper swiper-works swiper-hover">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide img-normal" style="background-image: url('./images/inline/banner1.jpg');">
+                            <div class="startup">
+                                <div class="socials">
+                                    <div class="socials__title">
+                                       <h4 class="title-26">Startup</h4> 
+                                    </div>
+                                    <div class="socials__ref">
+                                        <a href="#"><img src="images/github.png" alt="github"></a>
+                                        <a href="#"><img src="images/web.png" alt="web"></a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide img-normal" style="background-image: url('./images/inline/banner2.jpg');">
+                            <div class="bycicle">
+                                <div class="socials">
+                                    <div class="socials__title">
+                                       <h4 class="title-26">Bycicle</h4> 
+                                    </div>
+                                    <div class="socials__ref">
+                                        <a href="#"><img src="images/github.png" alt="github"></a>
+                                        <a href="#"><img src="images/web.png" alt="web"></a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts" style="background: grey;">
+            <div class="container">
+                <div class="contacts__title">
+                    <h4 class="title">contacts</h4>
+                </div>
+                <div class="row">
+                    <form class="col-50 box">
+                        <h4 class="title-26">Leave a message</h4>
+                        <div class="contacts__form">
+                            <input type="text" name="Name" class="contacts__form-item title-16" placeholder="Your Name*" required>
+                            <input type="email" name="Email" class="contacts__form-item title-16" placeholder="Your E-Mail*" required>
+                            <input type="text" name="Subject" class="contacts__form-item title-16" placeholder="Your Subject*" required>
+                            <textarea name="Message" class="contacts__form-item title-16" placeholder="Write Your Message*" required></textarea>
+                        </div>
+                        <div class="contacts__form-bottom">
+                            <div>
+                                <p class="title-16">* Required</p>
+                            </div>
+                            <input type="submit" class="button contacts__form-item" value="Hire Me!">
+                        </div>
+                    </form>
+                    <div class="col-50 contacts-second">
+                        <div class="contacts__address box">
+                            <h4 class="title-26">Address</h4>
+                            <p class="title-16">Ukraine, Kharkiv</p>
+                        </div>
+                        <div class="contacts__phone box">
+                            <h4 class="title-26">Phone</h4>
+                            <div class="contacts__tel">
+                                <a href="tel:+380638046928" class="title-16">+380 63 804 69 28</a>
+                            </div>
+                            <div class="contacts__tel">
+                                <a href="tel:+380638046928" class="title-16">+380 63 804 69 28</a>
+                            </div>
+                        </div>
+                        <div class="contacts__web box">
+                            <h4 class="title-26">Web</h4>
+                            <p class="title-16">Mail: <a href="mailto:timausov2@gmail.com" class="title-16">timausov2@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</div>
+<script type="text/javascript" src="js/main.min.js"></script></body>
+</html>
