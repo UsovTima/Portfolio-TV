@@ -1,3 +1,103 @@
 .last_works {
-	
+
+	.title {
+		@include screen(730) {
+			font-size: 25px;
+		}
+	}
+
+	.swiper {
+		margin-top: 20px;
+	 	width: 800px;
+	 	height: 60vh;
+
+	 	 @include screen(840) {
+	 	 	width: 90%;
+	 	 	height: 350px;
+	 	 }
+
+	 	 @include screen(480) {
+	 	 	width: 90%;
+	 	 	height: 250px;
+	 	 }
+
+
+	 	.swiper-slide {
+        	position: relative;
+        	transition: .5s;
+        	border: 4px solid black;
+        	resize: both;
+  			background: #ffd73e33;
+  			border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;	
+   		 }
+
+   		.swiper-pagination-bullet {
+   		 	width: 20px;
+			height: 0;
+			background: $white;
+			border-radius: 20%;
+			border-style: solid;
+			border-width: 15px 7.5px 0 7.5px;
+			border-color: #e4d0f2 transparent transparent transparent
+   		 }
+
+    	.socials {
+    		position: absolute;
+	        width: 20%;
+	        left: 0;
+	        bottom: 0;
+	        opacity: 0;
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+	        justify-content: center;
+	        padding: 15px 5px 50px;
+	        transition: 1s;
+	        z-index: 2;
+	        background: rgba(0,160,255,0.1);
+	        backdrop-filter: blur(12px);
+	        border-radius: 15px 15px 15px 70px;
+
+
+	        &__title {
+	        	padding-bottom: 20px;
+
+	        	@include screen(650) {
+	        		h4 {
+	        			font-size: 20px;
+	        		}
+	        	}
+	        	@include screen(480) {
+	        		h4 {
+	        			font-size:15px;
+	        		}
+	        	}
+	        }
+
+	        a {
+	        	display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            width: 48px;
+	            height: 48px;
+	            margin-bottom: 10px;
+
+	            @include screen(650) {
+	            	width: 30px;
+	            	height: 30px;
+	            }
+	        }
+
+	        a:hover {
+                transition: .5s;
+                transform: scale(1.2);
+            }
+    	}
+	}
+
+	.swiper-hover:hover {
+		.socials {
+			opacity: 1;
+		}
+	}
 }
