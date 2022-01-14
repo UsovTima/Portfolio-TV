@@ -34,3 +34,32 @@ $('.anchor').on('click', function (e) {
         })
     }
 })
+
+//Slider last works 
+
+import Swiper, { Navigation, Pagination, Autoplay, Mousewheel
+ } from 'swiper';
+
+Swiper.use([Navigation, Pagination, Autoplay, Mousewheel]);
+
+const swiper = new Swiper('.swiper-works', {
+    loop: true,
+    direction: "vertical",
+
+    autoplay: {
+        delay: 7000,
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    mousewheel: {
+        invert: true,
+    },
+    
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+});
