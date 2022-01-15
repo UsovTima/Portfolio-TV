@@ -1,8 +1,8 @@
 .experience {
 	display: flex;
 
-	h4 {
-		color: $white;
+	.title {
+		color:$white;
 	}
 
 	@include screen(800) {
@@ -66,10 +66,10 @@
 		background: rgba(255,255,255,0.1);
 		backdrop-filter: blur(12px);
     	padding: 35px 45px;
-    	position: relative;
-    	border-radius: 5px 15px;
+    	transition: 1.5s;
     	margin-top: 1%;
-    	transition: .6s;
+    	border-radius: 5px 15px;
+    	position: relative;
 
     	.title-26 {
     		margin-bottom: 30px;

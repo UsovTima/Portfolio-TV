@@ -40,6 +40,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: .4s;
+    color: #fff;
 }
 
 input {
@@ -74,7 +75,6 @@ section {
 .row {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;    
 
     @include screen(740) {
         flex-wrap: wrap;
@@ -155,4 +155,14 @@ section {
     background-position: 50% 50%!important;
     width: 100%!important;
     height: 100%!important;
+}
+
+.box {
+    width: 98%;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    padding: 60px 45px;
+    display: flex;
+    flex-direction: column;
 }
