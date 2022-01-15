@@ -45,6 +45,7 @@ a {
 
 input {
     outline: none;
+    color: #fff;
 }
 
 table {
@@ -165,4 +166,8 @@ section {
     padding: 60px 45px;
     display: flex;
     flex-direction: column;
+}
+
+.inside-shadow {
+    box-shadow: inset -8px 16px 8px 0px rgba(34, 60, 80, 0.2);
 }
