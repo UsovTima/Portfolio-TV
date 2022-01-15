@@ -74,6 +74,7 @@ section {
 .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;    
 
     @include screen(740) {
         flex-wrap: wrap;
@@ -111,6 +112,10 @@ section {
     justify-content: center;
     text-transform: capitalize;
     font: 700 40px/1.75 'Raleway', sans-serif;
+
+    @include screen(740) {
+        font-size: 25px;
+    }
 }
 
 .title-26 {

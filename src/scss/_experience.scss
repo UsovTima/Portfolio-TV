@@ -1,6 +1,10 @@
 .experience {
 	display: flex;
 
+	h4 {
+		color: $white;
+	}
+
 	@include screen(800) {
 		&__work {
 			width: 100%!important;
@@ -63,6 +67,9 @@
 		backdrop-filter: blur(12px);
     	padding: 35px 45px;
     	position: relative;
+    	border-radius: 5px 15px;
+    	margin-top: 1%;
+    	transition: .6s;
 
     	.title-26 {
     		margin-bottom: 30px;
@@ -75,5 +82,9 @@
     	p {
     		color: #b5b6bf;
     	}
+	}
+
+	&__work:hover {
+		border-radius: 25px 55px;
 	}
 }
