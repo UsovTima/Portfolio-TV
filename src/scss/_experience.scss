@@ -67,7 +67,6 @@
 		background: rgba(255,255,255,0.1);
 		backdrop-filter: blur(12px);
     	padding: 35px 45px;
-    	transition: 1.5s;
     	margin-top: 1%;
     	border-radius: 5px 15px;
     	position: relative;
@@ -83,9 +82,5 @@
     	p {
     		color: #b5b6bf;
     	}
-	}
-
-	&__work:hover {
-		border-radius: 25px 55px;
 	}
 }

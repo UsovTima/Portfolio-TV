@@ -32,14 +32,15 @@
    		 }
 
    		.swiper-pagination-bullet {
-   		 	width: 20px;
-			height: 0;
-			background: $white;
-			border-radius: 20%;
-			border-style: solid;
-			border-width: 15px 7.5px 0 7.5px;
-			border-color: #e4d0f2 transparent transparent transparent
-   		 }
+		    display: block;
+		    width: 10px;
+		    height: 15px;
+		    background: mediumslateblue;
+		    border-bottom: 2px solid darkslateblue;
+		    border-right: 2px solid darkslateblue;
+		    transform: rotate(45deg);
+		    margin: -2px;
+		}
 
     	.socials {
     		position: absolute;
