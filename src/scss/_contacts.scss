@@ -82,7 +82,6 @@
 
     &__address {
         padding: 30px 25px;
-        transition: 1.5s;
 
         @include screen(740) {
             align-items: center;
@@ -92,7 +91,6 @@
 
     &__phone {
         padding: 30px 25px;
-        transition: 1.5s;
 
         @include screen(740) {
             align-items: center;
@@ -102,17 +100,10 @@
 
     &__web {
         padding: 30px 25px;
-        transition: 1.5s;
 
         @include screen(740) {
             align-items: center;
             margin: 5px;
         }
-    }
-
-    &__address:hover,
-    &__phone:hover,
-    &__web:hover {
-        border-radius: 25px 45px;
     }
 }
